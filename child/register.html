@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="shortcut icon" href="../src/img/favicon.ico">
+	<title>register</title>
+	<link rel="stylesheet" type="text/css" href="../src/css/login.css">
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="login">
+			<div class="error-info">
+				<span class="error-info-msg">手机号有误，请重新填写</span>
+			</div>
+			<div class="phone">
+				<input type="text" id="login-moblie" placeholder="请输入手机号" maxlength="15" name="moblie">
+			</div>
+			<div class="form-password">
+				<input type="password" id="login-password" placeholder="请输入登录密码" name="password">
+			</div>
+			<div class="form-text">
+				<div class="login-text">
+					<input type="text" id="login-text" placeholder="请输入验证码">
+					<button class="getbtn btn btn-primary">获取验证码</button>
+				</div>
+			</div>
+			<div class="form-btn">
+				<input type="submit" class="mybtn" value="立即登录" name=commit>
+			</div>
+			<div class="un-username">
+				<span class="singup"><a href="./login.html">点我登录</a>已有账号，</span>
+			</div>
+		</div>
+	</div>
+<script>
+	function getPhone() {
+		$('#login-moblie').on('input', debounce(checkPhone, 1000));
+	}
+	getPhone();
+
+	function checkPhone() {
+			let phone = $("#login-moblie").val();
+			let error = $('.error-info');
+			let errorMsg = $('.error-info-msg');
+			if(!(/^1[34578]\d{9}$/.test(phone))) {
+				// errorMsg.append('手机号有误，请重新填写');
+				error.addClass('error-info-show');
+				console.log("error:", error);
+				return false;
+			} else {
+				error.removeClass('error-info-show');
+			}
+	}
+
+	// 防抖函数
+	function debounce(fn, wait, options) {
+			// 等待时间
+			wait = wait || 0;
+			// 点击次数
+			let timer;
+			return function() {
+					if (timer) {
+						clearTimeout(timer);
+						timer = null;
+					}
+					timer = setTimeout(function() {
+						fn();
+					}, wait)
+			}
+	}
+
+	for(var i =0; i<= 10; i++) { 
+		function timeId () { 
+			var j = i; 
+			setTimeout(function() { 
+				console.log('j:', j); 
+			}, 1000); 
+		} 
+		timeId(); 
+	};
+</script>
+</body>
+</html>
