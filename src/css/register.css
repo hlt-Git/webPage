@@ -1,0 +1,177 @@
+/*
+* @Author: Star
+* @Date:   2019-04-24 15:21:05
+* @Last Modified by:   Star
+* @Last Modified time: 2019-04-26 10:57:07
+*/
+body {
+	margin: 0;
+}
+#app {
+
+}
+.messagesBox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 13;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+	visibility: hidden;
+}
+.error-info {
+	color: red;
+	margin-top: 10px;
+	padding: 6px;
+	border-radius: 4px;
+	background-color: #fff6bd;
+	border: 1px solid #f5
+}
+.sessionPage {
+	padding: 70px 10px 20px;
+	max-width: 270px;
+	margin: 0 auto;
+}
+.sessionPage .sessionPage-logo {
+	text-align: center;
+}
+.sessionPage .sessionPage-logo img {
+	width: 20px;
+}
+.sessionPage-content {
+	padding: 30px 0 0;
+}
+.sessionPage-content form {
+
+}
+.sessionPage-content form .form-group {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.sessionPage-content form .form-group-add {
+	padding-bottom: 10px;
+	font-size: 14px;
+}
+.form-group .form-control {
+	width: 100%;
+	padding: 8px 0;
+	border-radius: 4px;
+	outline: none;
+	padding-left: 5px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.form-group .input-group #login-code {
+	width: 60%;
+	border-radius: 4px 0 0 4px;
+	border-right: none;
+}
+.error-name,
+.error-pass,
+.error-passes,
+.error-code {
+	text-align: left;
+	color: #dc3545;
+	font-size: 14px;
+	visibility: hidden;
+}
+.form-group .input-group {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	width: 100%;
+}
+.form-group .input-group-append {
+	width: 40%;
+}
+.input-group-append .btn {
+	width: 100%;
+	padding: 7px 0 !important;
+	color: #fff;
+	background-color:#555;
+	border: 1px solid #555 !important;
+	border-radius: 0 4px 4px 0;
+	outline: none;
+}
+/*发送验证码：禁止点击时候的样式*/
+.btn-secondary{
+	color: #fff;
+	background-color: #555;
+	width: 100%;
+	padding: 7px 0 !important;
+	border: 1px solid #555 !important;
+	border-radius: 0 4px 4px 0;
+	outline: none;
+	pointer-events: none;
+	cursor: default;
+	opacity: 0.65;
+}
+
+.sessionPage-content form .form-group.form-check {
+	text-align: left;
+	font-size: 12px;
+}
+.form-check .form-check-input {
+
+}
+.form-check .form-check-label {
+
+}
+.form-check-label a strong{
+	color: #333;
+}
+.form-check-label a {
+	color: #555;
+}
+/*注册按钮*/
+.form-group .mybtn {
+	width: 100%;
+	padding: 10px 0 !important;
+	color: #fff;
+	background-color:#d23430;
+	border: 1px solid #d23430 !important;
+	border-radius: 4px;
+	outline: none;
+}
+.mybtn:hover {
+	cursor: pointer;
+	background-color: #a53633;
+}
+/*注册： 禁止点击时候的样式*/
+.btn-markedness {
+	width: 100%;
+	padding: 10px 0 !important;
+	color: #fff;
+	border-radius: 4px;
+	outline: none;
+	border-color: #d23430;
+	background-color: #d23430;
+	border: 1px solid #d23430 !important;
+	pointer-events: none;
+	cursor: default;
+	opacity: 0.6;
+}
+.form-group .singup {
+	font-size: 13px;
+}
+.form-group .singup a {
+	color: #16a6c1;
+}
+a,
+a:hover {
+	text-decoration: none;
+}
+
+/*错误提示*/
+.show {
+	visibility: visible !important;
+}
+.error-input {
+	border: 1px solid #dc3545 !important;
+}

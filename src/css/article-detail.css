@@ -1,0 +1,304 @@
+/*
+* @Author: Star
+* @Date:   2019-04-26 09:29:08
+* @Last Modified by:   Star
+* @Last Modified time: 2019-04-26 20:21:20
+*/
+a {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+.img-big {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.img {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+body {
+	background-color: #eee;
+}
+
+.navbar-default {
+	background-color: #fff;
+	border: none;
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	border-radius: 0 0 4px 4px;
+}
+.navbar-default .container {
+	max-width: 1000px;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+header {
+	width: 100%;
+	height: 50px;
+}
+
+#content {
+	padding: 0;
+	max-width: 1000px;
+	/*height: 2000px;*/
+	background-color: #fff;
+	border-radius: 4px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+/*最大的容器*/
+#content .column-view {
+	position: relative;
+	/* width: 700px; */
+	max-width: 100%;
+	background-color: #fff;
+	border-radius: 2px;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+/*文章容器*/
+.column-view .article-area {
+
+}
+/*文章*/
+article.article {
+
+}
+/*作者详情*/
+article .author-info-block {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 35px;
+}
+/*作者头像*/
+.avatar-link {
+
+}
+.avatar-link .avatar-img {
+	flex: 0 0 auto;
+	margin-right: 1rem;
+	display: inline-block;
+	position: relative;
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #eee;
+}
+/*作者名字*/
+.author-info-box {
+	display: flex;
+	flex-direction: column;
+}
+.author-info-box a {
+	font-size: 20px;
+	font-weight: 600;
+	display: inline-block;
+	max-width: 100%;
+	/*font-size: 1.3rem;*/
+	font-weight: 700;
+	color: #333;
+}
+.author-info-box a .username {
+
+}
+/*发布时间及浏览量*/
+.meta-box {
+	display: flex;
+	/*font-size: 1.1rem;*/
+	color: #909090;
+	font-size: 14px;
+}
+.meta-box .time {
+	margin-right: 20px;
+}
+.meta-box .views-count {
+
+}
+/*文章标题*/
+article .article-title {
+	text-align: center;
+	font-weight: 600;
+}
+/*文章内容*/
+article .article-content {
+	color: #686868;
+}
+
+/*评论*/
+.column-view .comment-list-box {
+	margin-top: 20px;
+}
+
+.comment-title {
+	color: #8a9aa9;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	padding: 1.67rem 0 5px;
+	border-top: 1px solid rgba(178,186,194,.15);
+}
+/*评论的盒子*/
+.comment-form {
+
+}
+
+/*自己评论的输入框*/
+.avatar-box {
+	padding: 10px;
+	background-color: #f4f5f5;
+}
+.avatar-info-two {
+	display: flex;
+	flex-direction: row;
+	height: 40px;
+	align-items: center;
+}
+.avatar-img {
+	margin-right: 10px;
+}
+.avatar-name {
+	font-weight: 600;
+	font-size: 16px;
+	color: #d9534f;
+}
+/*editor富文本编译器*/
+.form-box {
+
+}
+#editor {
+	background-color: #fff;
+	border: 1px solid #ccc;
+}
+#editor {
+	overflow-x: scroll;
+}
+.toolbar {
+	border-bottom: 1px solid #eee;
+}
+.text {
+	min-height: 100px;
+}
+
+/*提交button*/
+.editor-btn{
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.submit {
+	float: right;
+	color: #fff;
+	background: #76a9de;
+	border-radius: 2px;
+	cursor: pointer;
+	padding: 10px 20px;
+	border: none;
+	font-weight: 600;
+}
+.submit-font {
+	background-color: #027fff;
+}
+
+
+/*评论列表*/
+.comment-list {
+
+}
+.image-viewer-box {
+
+}
+
+.item {
+
+}
+
+.comment {
+	margin: 10px 20px;
+	display: flex;
+	flex-direction: row;
+}
+/*评论人头像*/
+.user-popover-box {
+	margin-right: 20px;
+}
+
+/*评论内容&&评论人姓名*/
+.comment .comment-divider-line {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.other-meta-box {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+/*评论人姓名*/
+.comment-user-name {
+	font-size: 14px;
+	font-weight: 600;
+}
+.comment-user-name a{
+	color: #d9534f;
+}
+/*评论内容*/
+.comment-content {
+	margin: 10px 0;
+	font-size: 12px;
+	color: #686868;
+	word-break: break-all;
+}
+
+/*评论时间 和回复*/
+.reply-stat {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.reply-stat .time {
+	color: #bbb;
+	width: 40%;
+}
+.reply-stat .action-box {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 65%;
+}
+.reply-stat .action-box .comment-action {
+	cursor: pointer;
+}
+.reply-stat .action-box .comment-action .subimt-title {
+	margin-left: 6px;
+}
+
+/*评论的回复*/
+.comments-add {
+	margin: 10px 60px;
+	display: flex;
+	flex-direction: row;
+}
+.media-comment {
+	display: flex;
+}
+
+.footer {
+	text-align: center;
+	color: #c8c9ca;
+	background: #717071;
+}
+.footer-content {
+	text-align: center;
+	padding: 20px;
+	line-height: 20px;
+}
+.footer-info a{
+	color: #c8c9ca;
+}

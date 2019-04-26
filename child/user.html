@@ -2,11 +2,217 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>个人中心</title>
+		<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../src/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/user.css">
+
 </head>
 <body>
-	<header></header>
-	<content></content>
-	<footer></footer>
+	<div class="view-container">
+		<div class="mian-header-box">
+			<header>
+				<div class="container">
+					<a href="../index.html">
+						<img src="https://cdn.custom-cursor.com/db/pointer/pointer_397.png" alt="兔子酒店">
+						<span>兔子酒店</span>
+					</a>
+				</div>
+			</header>
+		</div>
+		<div class="content">
+			<div class="container main-container">
+				<div class="dialog-wrapper">
+					<div class="view user-view">
+						<div class="major-area">
+							<div class="user-info-block block shadow">
+								<div class="user-info-mian">
+									<div class="avatar-img">
+										<img src="https://mirror-gold-cdn.xitu.io/168e08c7c20a5ef2d06?imageView2/1/w/180/h/180/q/85/format/webp/interlace/1" alt="头像">
+									</div>
+									<div class="info-box">
+										<div class="info-box-top">
+											<h3 class="user-name">aLittleLittle</h3>
+										</div>
+										<div class="info-box-content">
+											<!-- <h5 class="user-item">2</h5> -->
+											<!-- <h5 class="user-item">男</h5> -->
+											<!-- <h5 class="user-item">生日: <span>1998/12/27</span></h5> -->
+											<!-- <h5 class="user-item">常用位置</h5> -->
+										</div>
+									</div>
+								</div>
+								<div class="user-info-edit">
+									<button class="setting-btn btn">编辑个人资料</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="main-user-tabbar">
+			<div class="container">
+				<div class="user-tabbar">
+					<div class="tabbar-items">
+						<ul id="myTab" class="nav nav-tabs">
+							<li class="active">
+								<a href="#user-info" data-toggle="tab">用户信息</a>
+							</li>
+							<li>
+								<a href="#collection" data-toggle="tab">我的收藏</a>
+							</li>
+							<li>
+								<a href="#administration" data-toggle="tab">我的发布</a>
+							</li>
+							<li>
+								<a href="#setting" data-toggle="tab">我的设置</a>
+							</li>
+							<li>
+								<a href="#aboutUs" data-toggle="tab">关于我们</a>
+							</li>
+						</ul>
+					</div>
+					<div id="myTabContent" class="tab-content">
+						<div id="collection" class="tab-pane fade">
+							<div class="collection-items">
+								<div class="post-item">
+									<div class="post-header">
+										<div class="author-info">
+											<div class="user-popover-box">
+												<a href="#">
+													<img src="https://cdn.custom-cursor.com/db/pointer/pointer_397.png" alt="我是头像">
+												</a>
+											</div>
+											<div class="author-info-content">
+												<div class="author-info-head">
+													<a href="#" target="_blank">SSH</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="post-item-content">
+										<a href="#" target="_blank">
+											<div class="podt-item-title">
+												<span>从面试题看 JS 事件循环与 macro micro 任务队列</span>
+											</div>
+											<div class="rich-content">
+												<div class="post-item-excerpt">
+													一天惬意的下午。朋友给我分享了一道头条面试题,如下: 这个题目主要是考察对同步任务、异步...
+												</div>
+											</div>
+										</a>
+									</div>
+									<div class="action-box post-item-actions">
+										<!-- 点赞 -->
+										<div class="like-action"></div>
+										<!-- 评论 -->
+										<div class="comment-action"></div>
+										<!-- 收藏 -->
+										<div class="collection-action"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="administration">
+							<p>iOS is a mobile operating system developed and distributed by Apple 
+								Inc. Originally released in 2007 for the iPhone, iPod Touch, and 
+								Apple TV. iOS is derived from OS X, with which it shares the 
+								Darwin foundation. iOS is Apple's mobile version of the 
+								OS X operating system used on Apple computers.</p>
+						</div>
+						<div class="tab-pane fade" id="setting">
+							<p>iOS is a mobile operating system developed and distributed by Apple 
+								Inc. Originally released in 2007 for the iPhone, iPod Touch, and 
+								Apple TV. iOS is derived from OS X, with which it shares the 
+								Darwin foundation. iOS is Apple's mobile version of the 
+								OS X operating system used on Apple computers.</p>
+						</div>
+						<div  class="tab-pane fade in active" id="user-info">
+							<div class="user-info-container">
+								<div class="user-info-items">
+									<form>
+										<div class="form-group">
+											<label for="exampleInputEmail1">Email address</label>
+											<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+										</div>
+										<div class="form-group">
+											<label for="exampleInputEmail1">Email address</label>
+											<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+										</div>
+										<div class="form-group">
+											<label for="exampleInputPassword1">Password</label>
+											<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+										</div>
+										<div class="form-group">
+											<label for="exampleInputFile">头像</label>
+											<input type="file" id="exampleInputFile" placeholder="">
+										</div>
+										<button type="submit" class="btn btn-default">Submit</button>
+										</form>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane fade" id="aboutUs">
+							<div class="about-us">
+								<div class="about-us-items">
+									<div class="item-details">
+										<div class="item">
+											<div class="item-left">官方微信</div>
+											<div class="item-right">
+												<span>123456987</span>
+											</div>
+										</div>
+										<div class="item">
+											<div class="item-left">微信公众号</div>
+											<div class="item-right">
+												<span>123456987</span>
+											</div>
+										</div>
+										<div class="item">
+											<div class="item-left">官方网站</div>
+											<div class="item-right">
+												<span>www.bing.com</span>
+											</div>
+										</div>
+										<div class="item">
+											<div class="item-left">服务电话</div>
+											<div class="item-right">
+												<span>
+													4545879924545
+												</span>
+											</div>
+										</div>
+										<div class="item">
+											<div class="item-left">公司邮箱</div>
+											<div class="item-right">
+												<span>12466@163.com</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script>
+		$(function() {
+			$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+				var activeTab = $(e.target).text();
+				var previousTab = $(e.relatedTarget).text(); 
+
+				$(".active-tab span").html(activeTab);
+				$(".previous-tab span").html(previousTab);
+			});
+		})
+	</script>
 </body>
 </html>

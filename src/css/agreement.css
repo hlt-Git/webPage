@@ -1,0 +1,39 @@
+/*
+* @Author: Star
+* @Date:   2019-04-25 10:38:15
+* @Last Modified by:   Star
+* @Last Modified time: 2019-04-25 10:55:44
+*/
+body {
+	font-size: 14px;
+	line-height: 1.64345;
+	color: #686868;
+	background: #666;
+	-webkit-font-smoothing: antialiased;
+}
+.p_container {
+	width: 800px;
+	max-width: 100%;
+	margin: 40px auto;
+	padding: 10px 23px;
+	background: #fff;
+	box-shadow: 0 0 20px rgba(0,0,0,0.35);
+	border-radius: 10px;
+	color: #444;
+	box-sizing: border-box;
+}
+.p_container h1 {
+	text-align: center;
+	font-size: 22px;
+	margin: 15px 0 30px;
+	color: #222;
+}
+p {
+	margin: 0 0 11.5px;
+}
+.p_container h2 {
+	font-size: 18px;
+}
+.p_container h3 {
+	font-size: 16px;
+}

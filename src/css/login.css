@@ -1,134 +1,99 @@
-/*
-* @Author: Star
-* @Date:   2019-04-20 20:32:49
-* @Last Modified by:   Star
-* @Last Modified time: 2019-04-22 16:59:05
-*/
-
-html {
-	height: 100%;
-}
-a:hover {
-	text-decoration: none;
-}
 body {
-	background: orange !important;
-}
-.container {
-	/*height: 100%;*/
-	margin-top: 10%;
-	padding: 40px 0;
-	background: pink;
-	display: flex;
-	justify-content: center;
-	/*align-items: center;*/
+	margin: 0;
 }
 #login {
-	background: yellow;
-	width: 40%;
-	padding-bottom: 40px;
+}
+.message-box {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 13;
+	text-align: center;
 	display: flex;
 	flex-direction: column;
-}
-@media (max-width: 600px) {
-	#login {
-		width: 100%;
-	}
-}
-@media (min-width: 600px) and (max-width: 1000px) {
-	#login {
-		width: 60%;
-	}
-}
-
-.error-info {
-	box-sizing: border-box;
-	border-radius: 2px;
-	background-color: #fff6bd;
-	border: 1px solid #f5b8a7;
-	font-size: 12px;
-	width: 80%;
-	margin: 10px auto;
-	padding: 10px 10px 10px 20px;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
 	visibility: hidden;
 }
-.error-info-show {
-	visibility: visible;
-}
-.login-type {
-	display: flex;
-	justify-content: center;
-}
-.login-type-name {
-	margin-right: 20px;
-}
-.phone,
-.form-password,
-.form-btn,
-.form-text  {
-	display: flex;
-	justify-content: center;
-}
-
-.phone-login {
-	margin-left: 18%;
-	text-decoration: none;
-}
-input[type="text"],
-input[type="password"] {
-	border: 1px solid #CCC;
-	width: 80%;
-	padding: 10px 0;
-	margin-top: 20px;
-	padding-left: 5px;
-	outline: none;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+.error-info {
+	color: red;
+	margin-top: 10px;
+	padding: 6px;
 	border-radius: 4px;
-}
-.login-text {
-	width: 80%;
-}
-.getbtn {
-	float: right;
-	margin-top: 24px;
+	background-color: #fff6bd;
+	border: 1px solid #f5b8a7;
 }
 
+.sessionPage {
+	padding: 100px 10px 40px;
+	max-width: 270px;
+	margin: 0 auto;
+}
+.sessionPage .sessionPage-logo {
+	text-align: center;
+}
+.sessionPage-logo img {
+	width: 20px;
+}
 
-#login-text {
-	width:60%;
+.sessionPage .sessionPage-content {
+	padding: 30px 0 0;
 }
-input[type="text"]:focus,
-input[type="password"]:focus {
-	border-color: #66afe9;
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+.sessionPage-content form {
 }
-.form-btn {
+
+.sessionPage-content form .form-group {
+	text-align: center;
+	margin-bottom: 10px;
+}
+.sessionPage-content form .form-group-add {
 	margin-top: 20px;
 }
-.mybtn {
-	width: 80%;
+.form-group .form-control{
+	width: 100%;
+	padding: 8px 0;
+	border-radius: 4px;
+	outline: none;
+	padding-left: 5px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+.form-group .error-name,
+.form-group .error-pass {
+	text-align: left;
+	color: #dc3545;
+	font-size: 14px;
+	visibility: hidden;
+}
+.form-group .mybtn {
+	width: 100%;
 	padding: 10px 0 !important;
 	color: #fff;
-	background-color: #2db6a8;
-	border: 1px solid #109085 !important;
+	background-color:#d23430;
+	border: 1px solid #d23430 !important;
+	border-radius: 4px;
 	outline: none;
 }
 .mybtn:hover {
 	cursor: pointer;
+	background-color: #a53633;
 }
-.mybtn:click {
-	outline: none;
+.form-group .singup {
+	font-size: 13px;
+}
+.form-group .singup a{
+	text-decoration: none;
+	color: #16a6c1;
+}
+.form-group .singup a:hover {
+	text-decoration: underline;
 }
 
-.un-username {
-	display: flex;
-	justify-content: center;
-	margin-top: 20px;
+.show {
+	visibility: visible !important;
 }
-.un-username .singup {
-	display: flex;
-	flex-direction: row-reverse;
-	height: 30px;
-	line-height: 30px;
-	width: 80%;
+.error-input {
+	border: 1px solid #dc3545 !important;
 }

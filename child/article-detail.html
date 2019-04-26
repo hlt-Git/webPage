@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>文章详情页面</title>
+	<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../src/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/article-detail.css">
+</head>
+<body>
+<div class="container">
+	<header>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">
+						<img alt="Brand" src="https://cdn.custom-cursor.com/db/pointer/pointer_397.png" class="img">
+					</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="./login.html">
+								<span class="glyphicon glyphicon-log-in"></span> 登录 
+							</a>
+						</li>
+						<li>
+							<a href="./register.html">
+								<span class="glyphicon glyphicon-plus"></span> 注册 
+							</a>
+						</li>
+						<li>
+							<a href="./user.html">
+								<span class="glyphicon glyphicon-user"></span> 个人中心 
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+</div>
+<div class="container" id="content">
+	<div class="column-view">
+		<div class="main-area article-area shadow">
+			<article class="article">
+				<div class="author-info-block">
+					<a href="" class="avatar-link">
+						<img src="https://user-gold-cdn.xitu.io/2018/8/31/1658dd68f9ead6c0?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="头像" class="avatar-img img-big">
+					</a>
+					<div class="author-info-box">
+						<a href="" target="_blank">
+							<span class="username">苏格团队</span>
+						</a>
+						<div class="meta-box">
+							<time class="time">2019年04月23日</time>
+							<div class="views-count">浏览量 2569</div>
+						</div>
+					</div>
+				</div>
+				<h1 class="article-title">Web调试技术详解</h1>
+				<div class="article-content">
+						首先，感谢各位大哥大姐们对本届核聚变的支持～（继续鞠躬.jpg）
+从4月8日开票以来，到目前为止，核聚变2019北京站首日门票现已全部售罄（包括机核铺、B站）。为了给来游玩的朋友们提供更好的活动体验，也为了避免一些安全问题，我们不会在现场售卖任何形式的入场门票，感谢大家对本次活动的支持！
+今年想来核聚变并且还没有购入门票的小伙伴，目前5月12日门票在机核铺和B站均有售卖，请各位看官抓紧时间，数量有限，还是先到先得哦～
+				</div>
+			</article>
+		</div>
+		<div class="comment-list-box" id="comment-box">
+			<div class="comment-title">评论</div>
+			<div class="comment-form">
+				<!-- 自己评论框 -->
+				<div class="avatar-box">
+					<div class="avatar-info-two">
+						<div class="avatar-img">
+							<img src="https://user-gold-cdn.xitu.io/2018/8/31/1658dd68f9ead6c0?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1"  class="img" alt="">
+						</div>
+						<div class="avatar-name">ALittleLitle</div>
+					</div>
+					<div class="form-box">
+						<div id="editor">
+							<div id="editor-header" class="toolbar"></div>
+							<div id="editor-content" class="text">
+								<p></p>
+							</div>
+						</div>
+						<div class="editor-btn">
+							<button class="submit">评论</button>
+						</div>
+					</div>
+				</div>
+				<!-- 评论列表 -->
+				<div class="comment-list">
+					<div class="image-viewer-box">
+						<div class="item">
+							<div class="comment">	<!-- 评论的展示 -->
+								<div class="user-popover-box">
+									<!-- 评论人头像 -->
+									<a href="">
+										<img src="https://mirror-gold-cdn.xitu.io/168e083aacd48912e02?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="" class="img">
+									</a>
+								</div>
+								<!-- 评论内容&&评论人姓名 -->
+								<div class="comment-divider-line">
+									<div class="other-meta-box">
+										<div class="comment-user-name">
+											<a href="" class="username">武动乾坤</a>
+										</div>
+										<!-- 评论内容 -->
+										<div class="comment-content">
+											移动端还是用vconsole吧亚当术士：等~等~（跃下），（对众英雄）给我来两个复仇者，三个神仙，四半变种人，还要一个跟别人不一样的钢铁侠。尼克福瑞（俯身面对亚当术士）：兄啊，你这要怎么打吗
+										</div>
+									</div>
+									<!-- 评论时间 和回复 -->
+									<div class="reply-stat">
+										<time class="time">两天前</time>
+										<div class="action-box">
+											<div class="comment-action">
+												<span class="glyphicon glyphicon-comment"></span>
+												<span class="subimt-title">回复</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 评论的回复 -->
+							<div class="comments-add">
+								<div class="media-comment">
+										<div class="user-popover-box">
+									<!-- 评论人头像 -->
+									<a href="">
+										<img src="https://mirror-gold-cdn.xitu.io/168e083aacd48912e02?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="" class="img">
+									</a>
+								</div>
+								<!-- 评论内容&&评论人姓名 -->
+								<div class="comment-divider-line">
+									<div class="other-meta-box">
+										<div class="comment-user-name">
+											<a href="" class="username">武动乾坤</a>
+										</div>
+										<!-- 评论内容 -->
+										<div class="comment-content">
+											移动端还是用vconsole吧亚当术士：等~等~（跃下），（对众英雄）给我来两个复仇者，三个神仙，四半变种人，还要一个跟别人不一样的钢铁侠。尼克福瑞（俯身面对亚当术士）：兄啊，你这要怎么打吗
+										</div>
+									</div>
+									<!-- 评论时间 和回复 -->
+									<div class="reply-stat">
+										<time class="time">两天前</time>
+										<div class="action-box">
+											<div class="comment-action">
+												<span class="glyphicon glyphicon-comment"></span>
+												<span class="subimt-title">回复</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="comment">
+								<div class="user-popover-box">
+									<!-- 评论人头像 -->
+									<a href="">
+										<img src="https://mirror-gold-cdn.xitu.io/168e083aacd48912e02?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="" class="img">
+									</a>
+								</div>
+								<!-- 评论内容&&评论人姓名 -->
+								<div class="comment-divider-line">
+									<div class="other-meta-box">
+										<div class="comment-user-name">
+											<a href="" class="username">武动乾坤</a>
+										</div>
+										<!-- 评论内容 -->
+										<div class="comment-content">
+											移动端还是用vconsole吧亚当术士：等~等~（跃下），（对众英雄）给我来两个复仇者，三个神仙，四半变种人，还要一个跟别人不一样的钢铁侠。尼克福瑞（俯身面对亚当术士）：兄啊，你这要怎么打吗
+										</div>
+									</div>
+									<!-- 评论时间 和回复 -->
+									<div class="reply-stat">
+										<time class="time">两天前</time>
+										<div class="action-box">
+											<div class="comment-action">
+												<span class="glyphicon glyphicon-comment"></span>
+												<span class="subimt-title">回复</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer class="footer">
+	<div class="footer-content">
+		<div class="footer-info">
+			<p>
+				All Rights Reserved 2009-2019 GAMECORES - Terms &amp; Conditions<br>京ICP备17068232号-1<br>
+				<a target="_blank" href="https://alioss.gcores.com/download/wenwangwen.jpg">网络文化经营许可证京网文[2019]1067-097号</a><br>
+			</p>
+		</div>
+	</div>
+</footer>
+
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://unpkg.com/wangeditor@3.1.1/release/wangEditor.min.js"></script>
+	<script src="../src/js/article-detail.js"></script>
+</body>
+</html>

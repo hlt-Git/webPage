@@ -1,0 +1,198 @@
+/*
+* @Author: Star
+* @Date:   2019-04-25 11:21:42
+* @Last Modified by:   Star
+* @Last Modified time: 2019-04-26 09:26:38
+*/
+a,
+a:hover {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+
+html {
+	font-size: 10px;
+	word-break: break-word;
+}
+
+/*@media only screen and(min-width: 800px) {
+	html {
+		font-size: 11px !important;
+	}
+}
+
+@media only screen and(min-width: 801px) {
+	html {
+		font-size: 12px !important;
+	}
+}*/
+
+
+.wrapper {
+	/*background-color: yellow;*/
+	box-sizing: border-box;
+}
+.container {
+	
+}
+/*文章分类： 热门和最新*/
+.list-header {
+	font-size: 1.6rem;
+	color: #eee;
+	padding: 10px 0;
+	display: flex;
+	border-bottom: 1px solid hsla(0,0%,59.2%,.1);
+}
+.list-nav {
+	line-height: 30px;
+	height: 30px;
+}
+.nav-list-left {
+	padding-left: 20px;
+	display: flex;
+	flex-direction: row;
+}
+.nav-item {
+	border-right: 1px solid hsla(0,0%,59.2%,.2);
+	padding-right: 20px;
+}
+.nav-item-end {
+	padding-left: 20px;
+	border-right: none;
+}
+.nav-item a {
+	color: #909090;
+}
+.nav-item a:hover {
+	color: #007fff;
+}
+/*点击选择时样式*/
+.active a{
+	color: #007fff;
+}
+
+
+/*文章板块*/
+.row {
+
+}
+/*文章介绍样式*/
+.info-box {
+	padding: 10px 0;
+	border-bottom: 1px solid hsla(0,0%,59.2%,.1);
+}
+
+/*公共样式*/
+.info-row {
+
+}
+/*文章发布者 时间 样式*/
+.meta-row {
+	font-size: 1.2rem;
+}
+.user-info {
+	display: flex;
+	align-items: baseline;
+	white-space: nowrap;
+	line-height: 30px;
+	height: 30px;
+}
+.user-info-item {
+	color: #b2bac2;
+}
+.user-info-item .user-name {
+	padding-right: 0.6rem;
+	color: #b2bac2;
+}
+.user-info-item .user-name:hover {
+	color: #007fff;
+}
+.user-info-item .user-date {
+	margin-right: 0.6rem;
+}
+
+.content-row {
+
+}
+.content-info {
+
+}
+.summary {
+
+}
+h6.title {
+	color: #2e3135;
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+h6.title:hover {
+	text-decoration: underline;
+}
+.abstract {
+	margin: 0 0 8px;
+	font-size: 1.2rem;
+	line-height: 24px;
+	color: #999;
+}
+
+.action-row {
+	display: inline-flex;
+	white-space: nowrap;
+}
+.action-list {
+	display: flex;
+	flex-direction: row;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+/*评论 点赞 收藏 公共样式*/
+.action-list .item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	padding: 1.6rem .8rem;
+	height: 2rem;
+	font-size: 1.083rem;
+	line-height: 1;
+	white-space: nowrap;
+	color: #b2bac2;
+	border-radius: 1px;
+	border: 1px solid #edeeef;
+}
+.clickable {
+
+}
+.like {
+
+}
+.action-list .comment {
+	border-left: none;
+	border-right: none;
+}
+.collection {
+
+}
+.action-list .item a{
+	display: flex;
+	align-items: center;
+	padding: 0 .8rem;
+	height: 100%;
+}
+
+.count-click,
+.count-comment,
+.count-collection {
+	color: #b2bac2;
+	margin-left: .2em;
+	font-weight: 700;
+}
+
+
+
+
+
+
+
