@@ -2,7 +2,7 @@
 * @Author: Star
 * @Date:   2019-04-26 15:01:05
 * @Last Modified by:   Star
-* @Last Modified time: 2019-04-26 20:22:18
+* @Last Modified time: 2019-04-27 16:19:10
 */
 $(function() {
 	// 富文本编译器
@@ -13,34 +13,10 @@ $(function() {
 	editor.customConfig.uploadImgShowBase64 = true;
 	// 设置z-index
 	editor.customConfig.zIndex = 1;
-	// 自定义菜单配置
-	/*editor.customConfig.menus = [
-		'head',  // 标题
-		'bold',  // 粗体
-		'fontSize',  // 字号
-		'fontName',  // 字体
-		'underline',  // 下划线
-		'foreColor',  // 文字颜色
-		'backColor',  // 背景颜色
-		'link',  // 插入链接
-		'justify',  // 对齐方式
-		'quote',  // 引用
-		'emoticon',  // 表情
-		'image',  // 插入图片
-		'video',  // 插入视频
-		'code',  // 插入代码
-		'undo',  // 撤销
-		'redo'  // 重复
-	]*/
-	// 自定义字体
-	editor.customConfig.fontNames = [
-		'宋体',
-		'微软雅黑',
-		'Arial',
-		'Tahoma',
-		'Verdana'
-	]
+
+
 	editor.create();
+	// E.fullscreen.init('#editor');
 	
 	$(".w-e-text").bind("input propertychange",function(event){
 		if(editor.txt.text()) {
@@ -50,4 +26,6 @@ $(function() {
 			$('.submit').removeClass('submit-font');
 		}
 	});
+
+
 });

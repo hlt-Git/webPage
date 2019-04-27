@@ -2,9 +2,71 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>话题</title>
+		<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../src/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../src/css/topic.css">
 </head>
 <body>
-  话题
+	<!-- 显示用户发布的话题，只是显示标题以及发布人的图像及昵称，
+	详情需点击查看，
+	详情页面头部显示发布人的头像及昵称，接着是话题，下面是评论和点赞。
+	评论的人之间可以互相回复，不仅可以对话题评论，也可以对评论的话进行回复，
+	点击发布人的头像查看他的主页，点击头像进入对方的个人主页，
+	主页显示：个人标签，以及朋友圈<朋友圈里是发布人发的图片或者说说>。 -->
+	<!-- 发布时间 浏览量 -->
+	<div class="container">
+		<div class="topic-view">
+			<div class="topic-list">
+				<div class="title">全部话题</div>
+					<div class="list">
+						<div class="topic-item">
+							<div class="topic-user">
+								<a href="" class="icon">
+									<img src="https://user-gold-cdn.xitu.io/2018/5/15/1635f8400e159843?imageView2/1/w/200/h/200/q/85/format/webp/interlace/1" alt="" class="img">
+									<a href="" class="user-name">一图胜千言</a>
+								</a>
+							</div>
+							<div class="item-content">
+								<a href="">
+									<span class="topic-say">一起封装vue ui组件，然后发到npm上！（1）</span>
+								</a>
+							</div>
+						</div>
+						<div class="topic-item">
+							<div class="topic-user">
+								<a href="" class="icon">
+									<img src="https://user-gold-cdn.xitu.io/2018/5/15/1635f8400e159843?imageView2/1/w/200/h/200/q/85/format/webp/interlace/1" alt="" class="img">
+									<a href="" class="user-name">一图胜千言</a>
+								</a>
+							</div>
+							<div class="item-content">
+								<a href="">
+									<span class="topic-say">一起封装vue ui组件，然后发到npm上！（1）</span>
+								</a>
+							</div>
+						</div>
+						<div class="topic-item">
+							<div class="topic-user">
+								<a href="" class="icon">
+									<img src="https://user-gold-cdn.xitu.io/2018/5/15/1635f8400e159843?imageView2/1/w/200/h/200/q/85/format/webp/interlace/1" alt="" class="img">
+									<a href="" class="user-name">一图胜千言</a>
+								</a>
+							</div>
+							<div class="item-content">
+								<a href="">
+									<span class="topic-say">一起封装vue ui组件，然后发到npm上！（1）</span>
+								</a>
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
