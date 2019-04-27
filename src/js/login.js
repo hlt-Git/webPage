@@ -79,4 +79,10 @@ $(function() {
 			$('.error-pass').removeClass('show');
 		}
 	}
+
+
+	// 点击立即登录跳转到选择标签页面
+	// $('.mybtn').click(function() {
+	// 	window.location.href = 'label.html'
+	// })
 })
