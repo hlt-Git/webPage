@@ -2,7 +2,7 @@
 * @Author: Star
 * @Date:   2019-04-28 14:39:11
 * @Last Modified by:   Star
-* @Last Modified time: 2019-04-28 20:34:13
+* @Last Modified time: 2019-04-28 21:28:36
 */
 html {
 	height: 100%;
@@ -156,11 +156,27 @@ img{
 	min-height: 30rem;
 }
 /*评论的综述*/
+.comment-tosay {
+	display: flex;
+}
 .comment-title {
+	width: 10%;
 	border-bottom: 1px solid #eee;
 	font-size: 1.1rem;
 	color: #aaa;
 	line-height: 2.4rem;
+}
+.comment-say {
+	width: 4rem;
+	margin-left: 85%;
+	display: flex;
+	align-items: center;
+	float: right;
+	flex-direction: row-reverse;
+	cursor: pointer;
+}
+.glyphicon-pad {
+	padding-left: 0.4rem;
 }
 /*评论列表*/
 .comment-list {
