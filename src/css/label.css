@@ -2,7 +2,7 @@
 * @Author: Star
 * @Date:   2019-04-26 20:42:17
 * @Last Modified by:   Star
-* @Last Modified time: 2019-04-27 20:42:32
+* @Last Modified time: 2019-04-28 14:32:17
 */
 html {
 	font-size: 14px;
@@ -91,27 +91,27 @@ body {
 }
 .icon-01 {
 	color: #6fbd69;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-weight: 500;
 }
 .icon-02 {
 	color: #8bdbc9;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-weight: 500;
 }
 .icon-03 {
 	color: #89baf7;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-weight: 500;
 }
 .icon-04 {
 	color: #9f9be1;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-weight: 500;
 }
 .icon-05 {
 	color: #f7b87b;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 	font-weight: 500;
 }
 
@@ -127,8 +127,10 @@ body {
 	text-align: center;
 	border-radius: 1.8rem;
 	margin-right: 0.6rem;
-	margin-bottom: 8px;
+	margin-bottom: 0.6rem;
 	padding: 0.5rem 1rem;
+	line-height: 1.8rem;
+	font-size: 1rem;
 	box-sizing: content-box;
 	border: 1px solid #ccc;
 	cursor: pointer;

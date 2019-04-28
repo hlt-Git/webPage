@@ -1,0 +1,245 @@
+/*
+* @Author: Star
+* @Date:   2019-04-28 14:39:11
+* @Last Modified by:   Star
+* @Last Modified time: 2019-04-28 20:34:13
+*/
+html {
+	height: 100%;
+	width: 100%;
+	font-size: 14px;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background: #eee;
+}
+
+@media only screen and (min-width:960px) and (max-width:1024px) {
+	html {
+		font-size: 13px;
+	}
+}
+
+@media only screen and (min-width:600px) and (max-width:960px) {
+	html {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width:0px) and (max-width:600px) {
+	html {
+		font-size: 11px;
+	}
+}
+
+/*抽取公共样式*/
+.mian-box {
+	padding: 0;
+	max-width: 70rem;
+	background-color: #fff;
+	border-radius: 0.4rem;
+}
+.mian-view {
+	position: relative;
+	max-width: 100%;
+	background-color: #fff;
+	border-radius: 0.4rem;
+	box-sizing: border-box;
+	padding: 0 1.4rem;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.container {
+	width: 100%;
+	padding: 0;
+}
+/*头部导航条*/
+.container .header {
+	height: 4rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
+	background: #fff;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, .1);
+}
+.header .back {
+	position: fixed;
+	left: 0;
+	font-size: 1.4rem;
+	padding: 1rem 1.4rem;
+	cursor: pointer;
+}
+.header .word {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+.topic {
+}
+
+/*内容部分*/
+#content {
+	margin-bottom: 1rem;
+}
+#content .column-view {
+}
+/*话题详情*/
+.content .wrap-view {
+
+}
+
+/*话题发布人的信息*/
+.wrap-view .user-detail {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-top: 1rem;
+}
+.user-detail .img {
+	width: 4rem;
+	height: 4rem;
+}
+.user-detail .username {
+	margin-left: 0.5rem;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+/*话题内容*/
+.wrap-view .topic-detail {
+}
+/*话题标题*/
+.topic-detail .topic-title {
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 600;
+	padding-bottom: 0.4rem;
+}
+/*话题内容*/
+.topic-detail .topic-box {
+	font-size: 1rem;
+}
+/*评论&&点赞*/
+.wrap-view .other-thing {
+	display: flex;
+	padding: 0.2rem 0rem;
+	font-size: 1.2rem;
+}
+/*点赞*/
+.other-thing .other-left {
+
+}
+/*评论*/
+.other-thing .other-tight {
+	position: absolute;
+	right: 0;
+	padding-right: 2rem;
+}
+
+/*评论的信息*/
+#asy {
+	margin-bottom: 3rem;
+}
+.warp-comment {
+}
+img{
+	width: 3rem;
+	border-radius: 1.5rem;
+}
+.warp-comment .comment-view {
+	padding: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 30rem;
+}
+/*评论的综述*/
+.comment-title {
+	border-bottom: 1px solid #eee;
+	font-size: 1.1rem;
+	color: #aaa;
+	line-height: 2.4rem;
+}
+/*评论列表*/
+.comment-list {
+
+}
+.image-viewer-box {
+
+}
+
+.item {
+
+}
+
+.comment {
+	margin: 1rem 0;
+	display: flex;
+	flex-direction: row;
+}
+
+/*评论人头像*/
+.user-popover-box {
+	margin-right: 0.4rem;
+}
+
+/*评论内容&&评论人姓名*/
+.comment .comment-divider-line {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+.other-meta-box {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+/*评论人姓名*/
+.comment-user-name {
+	font-size: 14px;
+	font-weight: 600;
+}
+.comment-user-name a{
+	color: #d9534f;
+}
+/*评论内容*/
+.comment-content {
+	margin: 0.8rem 0;
+	font-size: 1rem;
+	color: #686868;
+	word-break: break-all;
+}
+
+/*评论时间 和回复*/
+.reply-stat {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.reply-stat .time {
+	color: #bbb;
+	width: 40%;
+}
+.reply-stat .action-box {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 65%;
+}
+.reply-stat .action-box .comment-action {
+	cursor: pointer;
+}
+.reply-stat .action-box .comment-action .subimt-title {
+	margin-left: 6px;
+}
+
+/*评论的回复*/
+.comments-add {
+	margin: 0.8rem 2rem;
+	display: flex;
+	flex-direction: row;
+}
+.media-comment {
+	display: flex;
+}

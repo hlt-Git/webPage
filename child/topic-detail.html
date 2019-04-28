@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>话题详情页面</title>
+		<link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../src/css/normalize.css">
+	<link rel="stylesheet" href="../src/css/topic-detail.css">
+</head>
+<body>
+<!-- 详情页面头部显示发布人的头像及昵称，接着是话题，下面是评论和点赞。
+	评论的人之间可以互相回复，不仅可以对话题评论，也可以对评论的话进行回复，
+	点击发布人的头像查看他的主页，点击头像进入对方的个人主页， -->
+	<div class="container">
+		<div class="header">
+			<div class="back" onclick="javascript:history.go(-1)">
+				<span class="glyphicon glyphicon-menu-left"></span>
+			</div>
+			<div class="word">
+				<span class="topic">话题详情</span>
+			</div>
+		</div>
+	</div>
+	<div class="container mian-box" id="content">
+		<div class="column-view mian-view">
+			<div class="wrap-view">
+				<div class="user-detail">
+					<img src="https://user-gold-cdn.xitu.io/2018/7/6/1646df3d504c951d?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="" class="img">
+					<span class="username">老骥伏枥</span>
+				</div>
+				<div class="topic-detail">
+					<div class="topic-title">前端后端招聘啦</div>
+					<div class="topic-box">
+						【Teambition】国内领先的项目协作产品。React/Node.js招聘啦，3年以上相关技术栈使用经验。坐标上海张江高科，薪酬20-40K，免费午晚餐欢迎自荐推荐，简历投递huangshuo@teambition.com
+					</div>
+				</div>
+				<div class="other-thing">
+					<div class="other-left">
+						<!-- 点赞 -->
+						<span class="glyphicon glyphicon-star-empty"></span>
+					</div>
+					<div class="other-tight">
+						<!-- 评论 -->
+						<span class="glyphicon glyphicon-comment"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container mian-box" id="asy">
+		<div class="warp-comment mian-view">
+			<div class="comment-view">
+				<div class="comment-title">评论<span>( 3 )</span></div>
+				<!-- 评论列表 -->
+				<div class="comment-list">
+					<div class="image-viewer-box">
+						
+						<div class="item">
+							<div class="comment">	<!-- 评论的展示 -->
+								<div class="user-popover-box">
+									<!-- 评论人头像 -->
+									<a href="">
+										<img src="https://mirror-gold-cdn.xitu.io/168e083aacd48912e02?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="" class="img">
+									</a>
+								</div>
+								<!-- 评论内容&&评论人姓名 -->
+								<div class="comment-divider-line">
+									<div class="other-meta-box">
+										<div class="comment-user-name">
+											<a href="" class="username">武动乾坤</a>
+										</div>
+										<!-- 评论内容 -->
+										<div class="comment-content">
+											移动端还是用vconsole吧亚当术士：等~等~（跃下），（对众英雄）给我来两个复仇者，三个神仙，四半变种人，还要一个跟别人不一样的钢铁侠。尼克福瑞（俯身面对亚当术士）：兄啊，你这要怎么打吗
+										</div>
+									</div>
+									<!-- 评论时间 和回复 -->
+									<div class="reply-stat">
+										<time class="time">两天前</time>
+										<div class="action-box">
+											<div class="comment-action">
+												<span class="glyphicon glyphicon-comment"></span>
+												<span class="subimt-title">回复</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 评论的回复 -->
+							<div class="comments-add">
+								<div class="media-comment">
+										<div class="user-popover-box">
+									<!-- 评论人头像 -->
+									<a href="">
+										<img src="https://mirror-gold-cdn.xitu.io/168e083aacd48912e02?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="" class="img">
+									</a>
+								</div>
+								<!-- 评论内容&&评论人姓名 -->
+								<div class="comment-divider-line">
+									<div class="other-meta-box">
+										<div class="comment-user-name">
+											<a href="" class="username">武动乾坤</a>
+										</div>
+										<!-- 评论内容 -->
+										<div class="comment-content">
+											移动端还是用vconsole吧亚当术士：等~等~（跃下），（对众英雄）给我来两个复仇者，三个神仙，四半变种人，还要一个跟别人不一样的钢铁侠。尼克福瑞（俯身面对亚当术士）：兄啊，你这要怎么打吗
+										</div>
+									</div>
+									<!-- 评论时间 和回复 -->
+									<div class="reply-stat">
+										<time class="time">两天前</time>
+										<div class="action-box">
+											<div class="comment-action">
+												<span class="glyphicon glyphicon-comment"></span>
+												<span class="subimt-title">回复</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
