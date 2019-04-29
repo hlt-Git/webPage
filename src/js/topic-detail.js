@@ -1,11 +1,11 @@
 /*
 * @Author: Star
-* @Date:   2019-04-26 15:01:05
+* @Date:   2019-04-29 10:26:23
 * @Last Modified by:   Star
-* @Last Modified time: 2019-04-29 12:00:24
+* @Last Modified time: 2019-04-29 11:01:13
 */
 $(function() {
-	// 富文本编译器
+		// 富文本编译器
 	let E = window.wangEditor;
 	let editor = new E('#editor-header', '#editor-content');
 	// let editor = new E('#editor');
@@ -32,5 +32,4 @@ $(function() {
 		$('.comment-title').toggleClass('comment-title-bottom');
 		$('.comment-say').toggleClass('comment-say-click');
 	})
-
-});
+})

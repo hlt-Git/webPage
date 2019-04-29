@@ -2,7 +2,7 @@
 * @Author: Star
 * @Date:   2019-04-26 09:29:08
 * @Last Modified by:   Star
-* @Last Modified time: 2019-04-28 19:06:55
+* @Last Modified time: 2019-04-29 14:32:29
 */
 
 html {
@@ -26,6 +26,23 @@ html {
 		font-size: 11px;
 	}
 }
+/*抽取公共样式*/
+.mian-box {
+	padding: 0;
+	max-width: 70rem;
+	background-color: #fff;
+	border-radius: 0.4rem;
+}
+.mian-view {
+	position: relative;
+	max-width: 100%;
+	background-color: #fff;
+	border-radius: 0.4rem;
+	box-sizing: border-box;
+	padding: 0 1.4rem;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
 
 a {
 	text-decoration: none;
@@ -49,45 +66,45 @@ body {
 	background-color: #eee;
 }
 
-.navbar-default {
-	background-color: #fff;
-	border: none;
-	box-shadow: 0 2px 4px rgba(0,0,0,.1);
-	border-radius: 0 0 4px 4px;
-}
-.navbar-default .container {
-	max-width: 70rem;
-	position: relative;
-	margin: 0 auto;
+.container {
 	width: 100%;
+	padding: 0;
 }
-header {
-	width: 100%;
+/*头部导航条*/
+.container .header {
 	height: 4rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
+	background: #fff;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, .1);
+}
+.header .back {
+	position: fixed;
+	left: 0;
+	font-size: 1.4rem;
+	padding: 1rem 1.4rem;
+	cursor: pointer;
+}
+.header .word {
+	font-size: 1.4rem;
+	font-weight: 600;
+}
+.topic {
 }
 
 #content {
-	padding: 0;
-	max-width: 70rem;
-	/*height: 2000px;*/
-	background-color: #fff;
-	border-radius: 4px;
-	margin-top: 1.6rem;
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
 }
 /*最大的容器*/
 #content .column-view {
-	position: relative;
-	/* width: 700px; */
-	max-width: 100%;
-	background-color: #fff;
-	border-radius: 2px;
-	box-sizing: border-box;
-	padding: 0 20px;
+	overflow: hidden;
 }
 /*文章容器*/
 .column-view .article-area {
-
+	padding-bottom: 2rem;
 }
 /*文章*/
 article.article {
@@ -98,7 +115,7 @@ article .author-info-block {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	margin-top: 35px;
+	padding-top: 2rem;
 }
 /*作者头像*/
 .avatar-link {
@@ -154,34 +171,100 @@ article .article-content {
 	color: #686868;
 	font-size: 1.1rem;
 }
+/*评论和点赞*/
+.column-view .article-star {
+	position: relative;
+	padding-top: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	padding-bottom: 3rem;
+	float: right;
+}
+.article-star-wrap {
+	display: flex;
+	font-size: 1rem;
+	cursor: pointer;
+	font-weight: 600;
+	color: #aaa;
+}
+.star {
+	margin-right: 2rem;
+}
+.star-number {
+	padding-left: 0.1rem;
+}
+.collection {
 
-/*评论*/
-.column-view .comment-list-box {
-	margin-top: 20px;
+}
+.collection-number {
+	padding-left: 0.1rem;
 }
 
+
+/*评论的信息*/
+#asy {
+	margin-bottom: 3rem;
+}
+.warp-comment {
+}
+img{
+	width: 3rem;
+	border-radius: 1.5rem;
+}
+.warp-comment .comment-view {
+	padding: 1rem 0;
+	display: flex;
+	flex-direction: column;
+	min-height: 30rem;
+}
+/*评论的综述*/
+.comment-tosay {
+	display: flex;
+}
 .comment-title {
-	color: #8a9aa9;
-	font-size: 1.2rem;
-	font-weight: 400;
-	text-align: center;
-	padding: 1.67rem 0 5px;
-	border-top: 1px solid rgba(178,186,194,.15);
+	width: 40%;
+	font-size: 1.1rem;
+	color: #aaa;
+	line-height: 2.4rem;
+	border-bottom: 1px solid #eee;
 }
-/*评论的盒子*/
-.comment-form {
-
+/*下划线*/
+.comment-title-bottom {
+	border-bottom: none;
+}
+.comment-say {
+	width: 6rem;
+	margin-left: 50%;
+	display: flex;
+	align-items: center;
+	float: right;
+	flex-direction: row-reverse;
+}
+.comment-say:hover {
+	cursor: pointer;
+}
+.comment-say-click {
+	color: #03c0a5;
+	font-weight: 600;
+}
+.glyphicon-pad {
+	padding-left: 0.4rem;
 }
 
 /*自己评论的输入框*/
 .avatar-box {
 	padding: 10px;
 	background-color: #f4f5f5;
+	display: none;
+}
+/*点击显示隐藏*/
+.avatar-box-show {
+	display: block;
 }
 .avatar-info-two {
 	display: flex;
 	flex-direction: row;
-	height: 40px;
+	height: 3rem;
 	align-items: center;
 }
 .avatar-img {
@@ -199,8 +282,6 @@ article .article-content {
 #editor {
 	background-color: #fff;
 	border: 1px solid #ccc;
-}
-#editor {
 	overflow-x: scroll;
 }
 .toolbar {
@@ -232,7 +313,6 @@ article .article-content {
 	background-color: #027fff;
 }
 
-
 /*评论列表*/
 .comment-list {
 
@@ -246,13 +326,14 @@ article .article-content {
 }
 
 .comment {
-	margin: 10px 20px;
+	margin: 1rem 0;
 	display: flex;
 	flex-direction: row;
 }
+
 /*评论人头像*/
 .user-popover-box {
-	margin-right: 20px;
+	margin-right: 0.4rem;
 }
 
 /*评论内容&&评论人姓名*/
@@ -306,14 +387,13 @@ article .article-content {
 
 /*评论的回复*/
 .comments-add {
-	margin: 10px 60px;
+	margin: 0.8rem 2rem;
 	display: flex;
 	flex-direction: row;
 }
 .media-comment {
 	display: flex;
 }
-
 .footer {
 	text-align: center;
 	color: #c8c9ca;

@@ -2,7 +2,7 @@
 * @Author: Star
 * @Date:   2019-04-28 14:39:11
 * @Last Modified by:   Star
-* @Last Modified time: 2019-04-28 21:28:36
+* @Last Modified time: 2019-04-29 14:43:13
 */
 html {
 	height: 100%;
@@ -80,64 +80,111 @@ body {
 .topic {
 }
 
-/*内容部分*/
 #content {
 	margin-bottom: 1rem;
 }
+/*最大的容器*/
 #content .column-view {
+	overflow: hidden;
 }
-/*话题详情*/
-.content .wrap-view {
+/*文章容器*/
+.column-view .article-area {
+	padding-bottom: 2rem;
+}
+/*文章*/
+article.article {
 
 }
-
-/*话题发布人的信息*/
-.wrap-view .user-detail {
+/*作者详情*/
+article .author-info-block {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	padding-top: 1rem;
+	padding-top: 2rem;
 }
-.user-detail .img {
-	width: 4rem;
-	height: 4rem;
-}
-.user-detail .username {
-	margin-left: 0.5rem;
-	font-size: 1.2rem;
-	font-weight: 600;
-}
+/*作者头像*/
+.avatar-link {
 
-/*话题内容*/
-.wrap-view .topic-detail {
 }
-/*话题标题*/
-.topic-detail .topic-title {
-	text-align: center;
-	font-size: 1.4rem;
+.avatar-link .avatar-img {
+	flex: 0 0 auto;
+	margin-right: 1rem;
+	display: inline-block;
+	position: relative;
+	background-position: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: #eee;
+}
+/*作者名字*/
+.author-info-box {
+	display: flex;
+	flex-direction: column;
+}
+.author-info-box a {
 	font-weight: 600;
-	padding-bottom: 0.4rem;
+	display: inline-block;
+	max-width: 100%;
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: #333;
 }
-/*话题内容*/
-.topic-detail .topic-box {
+.author-info-box a .username {
+
+}
+/*发布时间及浏览量*/
+/*.meta-box {
+	display: flex;
+	color: #909090;
 	font-size: 1rem;
 }
-/*评论&&点赞*/
-.wrap-view .other-thing {
-	display: flex;
-	padding: 0.2rem 0rem;
-	font-size: 1.2rem;
+.meta-box .time {
+	margin-right: 20px;
 }
-/*点赞*/
-.other-thing .other-left {
+.meta-box .views-count {
+
+}*/
+/*文章标题*/
+article .article-title {
+	text-align: center;
+	font-weight: 600;
+	font-size: 2.4rem;
+}
+/*文章内容*/
+article .article-content {
+	color: #686868;
+	font-size: 1.1rem;
+}
+/*评论和点赞*/
+.column-view .article-star {
+	position: relative;
+	padding-top: 2rem;
+	height: 2rem;
+	line-height: 2rem;
+	padding-bottom: 3rem;
+	float: right;
+}
+.article-star-wrap {
+	display: flex;
+	font-size: 1rem;
+	cursor: pointer;
+	font-weight: 600;
+	color: #aaa;
+}
+.star {
+	margin-right: 2rem;
+}
+.star-number {
+	padding-left: 0.1rem;
+}
+.collection {
 
 }
-/*评论*/
-.other-thing .other-tight {
-	position: absolute;
-	right: 0;
-	padding-right: 2rem;
+.collection-number {
+	padding-left: 0.1rem;
 }
+
+
 
 /*评论的信息*/
 #asy {
@@ -160,24 +207,97 @@ img{
 	display: flex;
 }
 .comment-title {
-	width: 10%;
-	border-bottom: 1px solid #eee;
+	width: 40%;
 	font-size: 1.1rem;
 	color: #aaa;
 	line-height: 2.4rem;
+	border-bottom: 1px solid #eee;
+}
+/*下划线*/
+.comment-title-bottom {
+	border-bottom: none;
 }
 .comment-say {
-	width: 4rem;
-	margin-left: 85%;
+	width: 6rem;
+	margin-left: 50%;
 	display: flex;
 	align-items: center;
 	float: right;
 	flex-direction: row-reverse;
+}
+.comment-say:hover {
 	cursor: pointer;
+}
+.comment-say-click {
+	color: #03c0a5;
+	font-weight: 600;
 }
 .glyphicon-pad {
 	padding-left: 0.4rem;
 }
+
+/*自己评论的输入框*/
+.avatar-box {
+	padding: 10px;
+	background-color: #f4f5f5;
+	display: none;
+}
+/*点击显示隐藏*/
+.avatar-box-show {
+	display: block;
+}
+.avatar-info-two {
+	display: flex;
+	flex-direction: row;
+	height: 3rem;
+	align-items: center;
+}
+.avatar-img {
+	margin-right: 10px;
+}
+.avatar-name {
+	font-weight: 600;
+	font-size: 1.3rem;
+	color: #d9534f;
+}
+/*editor富文本编译器*/
+.form-box {
+
+}
+#editor {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	overflow-x: scroll;
+}
+.toolbar {
+	border-bottom: 1px solid #eee;
+}
+.text {
+	min-height: 100px;
+}
+
+/*提交button*/
+.editor-btn{
+	width: 100%;
+	height: auto;
+	margin-top: 10px;
+	overflow: hidden;
+}
+.submit {
+	float: right;
+	color: #fff;
+	background: #76a9de;
+	border-radius: 2px;
+	cursor: pointer;
+	padding: 10px 20px;
+	border: none;
+	font-weight: 600;
+	font-size: 1.2rem;
+}
+.submit-font {
+	background-color: #027fff;
+}
+
 /*评论列表*/
 .comment-list {
 

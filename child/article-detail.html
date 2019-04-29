@@ -11,45 +11,17 @@
 </head>
 <body>
 <div class="container">
-	<header>
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-						<span class="sr-only">切换导航</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="#">
-						<img alt="Brand" src="https://cdn.custom-cursor.com/db/pointer/pointer_397.png" class="img">
-					</a>
-				</div>
-				<div id="navbar" class="navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="./login.html">
-								<span class="glyphicon glyphicon-log-in"></span> 登录 
-							</a>
-						</li>
-						<li>
-							<a href="./register.html">
-								<span class="glyphicon glyphicon-plus"></span> 注册 
-							</a>
-						</li>
-						<li>
-							<a href="./user.html">
-								<span class="glyphicon glyphicon-user"></span> 个人中心 
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-	</header>
+	<div class="header">
+		<div class="back" onclick="javascript:history.go(-1)">
+			<span class="glyphicon glyphicon-menu-left"></span>
+		</div>
+		<div class="word">
+			<span class="topic">文章详情</span>
+		</div>
+	</div>
 </div>
-<div class="container" id="content">
-	<div class="column-view">
+<div class="container mian-box" id="content">
+	<div class="column-view mian-view">
 		<div class="main-area article-area shadow">
 			<article class="article">
 				<div class="author-info-block">
@@ -74,138 +46,167 @@
 				</div>
 			</article>
 		</div>
-		<div class="comment-list-box" id="comment-box">
-			<div class="comment-title">评论</div>
-			<div class="comment-form">
-				<!-- 自己评论框 -->
-				<div class="avatar-box">
-					<div class="avatar-info-two">
-						<div class="avatar-img">
-							<img src="https://user-gold-cdn.xitu.io/2018/8/31/1658dd68f9ead6c0?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1"  class="img" alt="">
-						</div>
-						<div class="avatar-name">ALittleLitle</div>
-					</div>
-					<div class="form-box">
-						<div id="editor">
-							<div id="editor-header" class="toolbar"></div>
-							<div id="editor-content" class="text">
-								<p></p>
-							</div>
-						</div>
-						<div class="editor-btn">
-							<button class="submit">评论</button>
-						</div>
-					</div>
+		<div class="article-star">
+			<div class="article-star-wrap">
+				<div class="star">
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="star-number">12</span>
 				</div>
-				<!-- 评论列表 -->
-				<div class="comment-list">
-					<div class="image-viewer-box">
-						
-						<div class="item">
-							<div class="comment">	<!-- 评论的展示 -->
-								<div class="user-popover-box">
-									<!-- 评论人头像 -->
-									<a href="">
-										<img src="https://mirror-gold-cdn.xitu.io/168e083aacd48912e02?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="" class="img">
-									</a>
-								</div>
-								<!-- 评论内容&&评论人姓名 -->
-								<div class="comment-divider-line">
-									<div class="other-meta-box">
-										<div class="comment-user-name">
-											<a href="" class="username">武动乾坤</a>
-										</div>
-										<!-- 评论内容 -->
-										<div class="comment-content">
-											移动端还是用vconsole吧亚当术士：等~等~（跃下），（对众英雄）给我来两个复仇者，三个神仙，四半变种人，还要一个跟别人不一样的钢铁侠。尼克福瑞（俯身面对亚当术士）：兄啊，你这要怎么打吗
-										</div>
-									</div>
-									<!-- 评论时间 和回复 -->
-									<div class="reply-stat">
-										<time class="time">两天前</time>
-										<div class="action-box">
-											<div class="comment-action">
-												<span class="glyphicon glyphicon-comment"></span>
-												<span class="subimt-title">回复</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<!-- 评论的回复 -->
-							<div class="comments-add">
-								<div class="media-comment">
-										<div class="user-popover-box">
-									<!-- 评论人头像 -->
-									<a href="">
-										<img src="https://mirror-gold-cdn.xitu.io/168e083aacd48912e02?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="" class="img">
-									</a>
-								</div>
-								<!-- 评论内容&&评论人姓名 -->
-								<div class="comment-divider-line">
-									<div class="other-meta-box">
-										<div class="comment-user-name">
-											<a href="" class="username">武动乾坤</a>
-										</div>
-										<!-- 评论内容 -->
-										<div class="comment-content">
-											移动端还是用vconsole吧亚当术士：等~等~（跃下），（对众英雄）给我来两个复仇者，三个神仙，四半变种人，还要一个跟别人不一样的钢铁侠。尼克福瑞（俯身面对亚当术士）：兄啊，你这要怎么打吗
-										</div>
-									</div>
-									<!-- 评论时间 和回复 -->
-									<div class="reply-stat">
-										<time class="time">两天前</time>
-										<div class="action-box">
-											<div class="comment-action">
-												<span class="glyphicon glyphicon-comment"></span>
-												<span class="subimt-title">回复</span>
-											</div>
-										</div>
-									</div>
-								</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="item">
-							<div class="comment">
-								<div class="user-popover-box">
-									<!-- 评论人头像 -->
-									<a href="">
-										<img src="https://mirror-gold-cdn.xitu.io/168e083aacd48912e02?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="" class="img">
-									</a>
-								</div>
-								<!-- 评论内容&&评论人姓名 -->
-								<div class="comment-divider-line">
-									<div class="other-meta-box">
-										<div class="comment-user-name">
-											<a href="" class="username">武动乾坤</a>
-										</div>
-										<!-- 评论内容 -->
-										<div class="comment-content">
-											移动端还是用vconsole吧亚当术士：等~等~（跃下），（对众英雄）给我来两个复仇者，三个神仙，四半变种人，还要一个跟别人不一样的钢铁侠。尼克福瑞（俯身面对亚当术士）：兄啊，你这要怎么打吗
-										</div>
-									</div>
-									<!-- 评论时间 和回复 -->
-									<div class="reply-stat">
-										<time class="time">两天前</time>
-										<div class="action-box">
-											<div class="comment-action">
-												<span class="glyphicon glyphicon-comment"></span>
-												<span class="subimt-title">回复</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div>
+				<div class="collection">
+					<span class="glyphicon glyphicon-heart"></span>
+					<span class="collection-number">20</span>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
+
+<!-- 评论列表 -->
+<div class="container mian-box" id="asy">
+	<div class="warp-comment mian-view">
+		<div class="comment-view">
+			
+			<div class="comment-tosay">
+				<div class="comment-title">
+					评论<span>( 3 )</span>
+				</div>
+				<div class="comment-say">
+					<span class="glyphicon-pad">评论</span>
+					<span class="glyphicon glyphicon-pencil"></span>
+				</div>
+			</div>
+			<!-- 自己评论框 -->
+			<div class="avatar-box">
+				<div class="avatar-info-two">
+					<div class="avatar-img">
+						<img src="https://user-gold-cdn.xitu.io/2018/8/31/1658dd68f9ead6c0?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1"  class="img" alt="">
+					</div>
+					<div class="avatar-name">ALittleLitle</div>
+				</div>
+				<div class="form-box">
+					<div id="editor">
+						<div id="editor-header" class="toolbar"></div>
+						<div id="editor-content" class="text">
+							<p></p>
+						</div>
+					</div>
+					<div class="editor-btn">
+						<button class="submit">评论</button>
+					</div>
+				</div>
+			</div>
+			<!-- 评论列表 -->
+			<div class="comment-list">
+				<div class="image-viewer-box">
+					
+					<div class="item">
+						<div class="comment">	<!-- 评论的展示 -->
+							<div class="user-popover-box">
+								<!-- 评论人头像 -->
+								<a href="">
+									<img src="https://mirror-gold-cdn.xitu.io/168e083aacd48912e02?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="" class="img">
+								</a>
+							</div>
+							<!-- 评论内容&&评论人姓名 -->
+							<div class="comment-divider-line">
+								<div class="other-meta-box">
+									<div class="comment-user-name">
+										<a href="" class="username">武动乾坤</a>
+									</div>
+									<!-- 评论内容 -->
+									<div class="comment-content">
+										移动端还是用vconsole吧亚当术士：等~等~（跃下），（对众英雄）给我来两个复仇者，三个神仙，四半变种人，还要一个跟别人不一样的钢铁侠。尼克福瑞（俯身面对亚当术士）：兄啊，你这要怎么打吗
+									</div>
+								</div>
+								<!-- 评论时间 和回复 -->
+								<div class="reply-stat">
+									<time class="time">两天前</time>
+									<div class="action-box">
+										<div class="comment-action">
+											<span class="glyphicon glyphicon-comment"></span>
+											<span class="subimt-title">回复</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- 评论的回复 -->
+						<div class="comments-add">
+							<div class="media-comment">
+								<div class="user-popover-box">
+									<!-- 评论人头像 -->
+									<a href="">
+										<img src="https://mirror-gold-cdn.xitu.io/168e083aacd48912e02?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="" class="img">
+									</a>
+								</div>
+								<!-- 评论内容&&评论人姓名 -->
+								<div class="comment-divider-line">
+									<div class="other-meta-box">
+										<div class="comment-user-name">
+											<a href="" class="username">武动乾坤</a>
+										</div>
+										<!-- 评论内容 -->
+										<div class="comment-content">
+											移动端还是用vconsole吧亚当术士：等~等~（跃下），（对众英雄）给我来两个复仇者，三个神仙，四半变种人，还要一个跟别人不一样的钢铁侠。尼克福瑞（俯身面对亚当术士）：兄啊，你这要怎么打吗
+										</div>
+									</div>
+									<!-- 评论时间 和回复 -->
+									<div class="reply-stat">
+										<time class="time">两天前</time>
+										<div class="action-box">
+											<div class="comment-action">
+												<span class="glyphicon glyphicon-comment"></span>
+												<span class="subimt-title">回复</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 第二条评论 -->
+					<div class="item">
+						<div class="comment">	<!-- 评论的展示 -->
+							<div class="user-popover-box">
+								<!-- 评论人头像 -->
+								<a href="">
+									<img src="https://mirror-gold-cdn.xitu.io/168e083aacd48912e02?imageView2/1/w/100/h/100/q/85/format/webp/interlace/1" alt="" class="img">
+								</a>
+							</div>
+							<!-- 评论内容&&评论人姓名 -->
+							<div class="comment-divider-line">
+								<div class="other-meta-box">
+									<div class="comment-user-name">
+										<a href="" class="username">武动乾坤</a>
+									</div>
+									<!-- 评论内容 -->
+									<div class="comment-content">
+										移动端还是用vconsole吧亚当术士：等~等~（跃下），（对众英雄）给我来两个复仇者，三个神仙，四半变种人，还要一个跟别人不一样的钢铁侠。尼克福瑞（俯身面对亚当术士）：兄啊，你这要怎么打吗
+									</div>
+								</div>
+								<!-- 评论时间 和回复 -->
+								<div class="reply-stat">
+									<time class="time">两天前</time>
+									<div class="action-box">
+										<div class="comment-action">
+											<span class="glyphicon glyphicon-comment"></span>
+											<span class="subimt-title">回复</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+
+
 <footer class="footer">
 	<div class="footer-content">
 		<div class="footer-info">
